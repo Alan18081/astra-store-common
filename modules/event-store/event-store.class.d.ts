@@ -7,5 +7,5 @@ export declare class EventStore {
     connect(config: TCPConfig): EventStore;
     getClient(): TCPClient;
     newEvent(entityId: string, name: string, event: any): import("geteventstore-promise").NewEvent;
-    close(): EventStore;
+    close(): Promise<void>;
 }
