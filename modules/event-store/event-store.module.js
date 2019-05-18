@@ -7,9 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-let default_1 = class {
+let EventStoreModule = class EventStoreModule {
 };
-default_1 = __decorate([
+EventStoreModule = __decorate([
     common_1.Global(),
     common_1.Module({})
-], default_1);
+], EventStoreModule);
+exports.EventStoreModule = EventStoreModule;
