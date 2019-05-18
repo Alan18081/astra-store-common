@@ -13,6 +13,10 @@ const typeorm_1 = require("typeorm");
 class BaseEvent {
 }
 __decorate([
+    typeorm_1.ObjectIdColumn(),
+    __metadata("design:type", String)
+], BaseEvent.prototype, "_id", void 0);
+__decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
 ], BaseEvent.prototype, "entityId", void 0);
@@ -24,4 +28,8 @@ __decorate([
     typeorm_1.Generated('increment'),
     __metadata("design:type", Number)
 ], BaseEvent.prototype, "version", void 0);
+__decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", Object)
+], BaseEvent.prototype, "data", void 0);
 exports.BaseEvent = BaseEvent;
