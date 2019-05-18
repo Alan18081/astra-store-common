@@ -10,10 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
+const class_transformer_1 = require("class-transformer");
+const enums_1 = require("../enums");
 class BaseEvent {
+    constructor(partial) {
+        Object.assign(this, partial);
+    }
 }
 __decorate([
     typeorm_1.ObjectIdColumn(),
+    class_transformer_1.Transform(value => value.toString()),
     __metadata("design:type", String)
 ], BaseEvent.prototype, "_id", void 0);
 __decorate([
@@ -32,4 +38,8 @@ __decorate([
     typeorm_1.Column(),
     __metadata("design:type", Object)
 ], BaseEvent.prototype, "data", void 0);
+__decorate([
+    typeorm_1.Column(),
+    __metadata("design:type", String)
+], BaseEvent.prototype, "type", void 0);
 exports.BaseEvent = BaseEvent;
