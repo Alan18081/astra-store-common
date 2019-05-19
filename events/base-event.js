@@ -13,9 +13,6 @@ const typeorm_1 = require("typeorm");
 const class_transformer_1 = require("class-transformer");
 const enums_1 = require("../enums");
 class BaseEvent {
-    constructor(partial) {
-        Object.assign(this, partial);
-    }
 }
 __decorate([
     typeorm_1.ObjectIdColumn(),

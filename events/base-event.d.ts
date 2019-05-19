@@ -6,5 +6,4 @@ export declare class BaseEvent {
     version: number;
     data: object;
     type: EventsCodes;
-    constructor(partial: Partial<BaseEvent>);
 }
