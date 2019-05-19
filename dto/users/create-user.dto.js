@@ -10,23 +10,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const class_validator_1 = require("class-validator");
-class CreateUserCommand {
+class CreateUserDto {
 }
 __decorate([
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], CreateUserCommand.prototype, "firstName", void 0);
+], CreateUserDto.prototype, "firstName", void 0);
 __decorate([
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], CreateUserCommand.prototype, "lastName", void 0);
+], CreateUserDto.prototype, "lastName", void 0);
 __decorate([
     class_validator_1.IsEmail(),
     __metadata("design:type", String)
-], CreateUserCommand.prototype, "email", void 0);
+], CreateUserDto.prototype, "email", void 0);
 __decorate([
     class_validator_1.IsString(),
     class_validator_1.MinLength(6),
     __metadata("design:type", String)
-], CreateUserCommand.prototype, "password", void 0);
-exports.CreateUserCommand = CreateUserCommand;
+], CreateUserDto.prototype, "password", void 0);
+exports.CreateUserDto = CreateUserDto;

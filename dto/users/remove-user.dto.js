@@ -10,10 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const class_validator_1 = require("class-validator");
-class RemoveUserCommand {
+class RemoveUserDto {
 }
 __decorate([
     class_validator_1.IsInt(),
     __metadata("design:type", Number)
-], RemoveUserCommand.prototype, "id", void 0);
-exports.RemoveUserCommand = RemoveUserCommand;
+], RemoveUserDto.prototype, "id", void 0);
+exports.RemoveUserDto = RemoveUserDto;
