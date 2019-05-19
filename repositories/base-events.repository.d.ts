@@ -1,5 +1,5 @@
 import { Model, Document } from 'mongoose';
-export declare class BaseRepository<T extends Document> {
+export declare class BaseEventsRepository<T extends Document> {
     readonly model: Model<T>;
     constructor(model: Model<T>);
     findMany(query: Partial<T>, skip?: number, limit?: number): Promise<T[]>;
