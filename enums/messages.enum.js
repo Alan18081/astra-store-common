@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Messages;
+(function (Messages) {
+    Messages["INTERNAL_SERVER_ERROR"] = "Server cannot process your request, because of internal error";
+    Messages["UNAUTHORIZED"] = "Unauthorized";
+    Messages["USER_ALREADY_EXISTS"] = "User already exists";
+    Messages["USER_NOT_FOUND"] = "User with that email doesn't exists";
+    Messages["WRONG_PASSWORD"] = "Wrong password";
+    Messages["TOKEN_IS_NOT_FOUND"] = "Auth token is not found";
+    Messages["INVALID_TOKEN"] = "Invalid token";
+    Messages["USER_DOESNT_HAVE_PASSWORD"] = "User doesn't have password because of using google for authentication";
+    Messages["PROJECT_TOKEN_NOT_FOUND"] = "Auth token for project is not found";
+    Messages["ACCOUNT_TOKEN_NOT_FOUND"] = "Auth token for project account is not found";
+    Messages["PROJECT_NOT_FOUND"] = "Project doesn't exist";
+    Messages["ACCOUNT_NOT_FOUND"] = "Account doesn't exist";
+    Messages["STORAGE_NOT_FOUND"] = "Storage doesn't exist";
+    Messages["STORAGE_NAME_ERROR"] = "Storage with provided name already exists";
+    Messages["STORAGE_PATH_ERROR"] = "Storage with provided path already exists";
+    Messages["STORAGE_DATA_ALREADY_EXISTS"] = "Storage Data for provided storage already exists";
+    Messages["INVALID_PERMISSIONS"] = "You don't have permissions to do this operation";
+    Messages["INVALID_REFRESH_TOKEN"] = "Provided refresh token is invalid";
+    Messages["INVALID_PASSWORD_HASH"] = "Provided hash for resetting password is invalid";
+    Messages["INVALID_STORAGE_TYPE"] = "Provided type doesn't match with storage type";
+})(Messages = exports.Messages || (exports.Messages = {}));
