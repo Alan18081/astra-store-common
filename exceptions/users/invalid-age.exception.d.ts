@@ -1,4 +1,4 @@
 import { RpcException } from '@nestjs/microservices';
-export declare class UserAlreadyExistsException extends RpcException {
+export declare class InvalidAgeException extends RpcException {
     constructor(message: any);
 }

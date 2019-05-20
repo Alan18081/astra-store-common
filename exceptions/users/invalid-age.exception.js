@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const microservices_1 = require("@nestjs/microservices");
-class UserAlreadyExistsException extends microservices_1.RpcException {
+class InvalidAgeException extends microservices_1.RpcException {
     constructor(message) {
         super(message);
     }
 }
-exports.UserAlreadyExistsException = UserAlreadyExistsException;
+exports.InvalidAgeException = InvalidAgeException;
